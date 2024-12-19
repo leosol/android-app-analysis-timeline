@@ -109,13 +109,13 @@ DB_FILES_SPECS = {
                 _PK_KEY: ["SELECT DISTINCT(package) from apps"],
                 _TL_KEY: [""""""]
         },
-        "com.samsung.android.forest.1":{
+        "com.samsung.android.forest.1": {
                 _FI_KEY: 'dwbCommon.db',
                 _PK_KEY: ["SELECT DISTINCT(name) from foundPackages"],
                 _TL_KEY: ["""SELECT a.name, strftime('%Y/%m/%d  %H:%M', datetime(b.timeStamp/1000, 'unixepoch')) as timestamp, b.timeStamp, 
                 'usageEvents' as event from foundPackages a inner join usageEvents b on a.pkgId=b.pkgId"""]
         },
-        "com.samsung.android.game.gos.1":{
+        "com.samsung.android.game.gos.1": {
                 _FI_KEY: 'categoryInfo.db',
                 _PK_KEY: ["select DISTINCT(pkgName) from CategoryInfo"],
                 _TL_KEY: []
